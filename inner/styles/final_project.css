@@ -47,7 +47,7 @@ p{
 
 #dashboard{
     display: grid;
-    margin-left: 100px;
+    margin-left: 30px;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 80px 25px;
     justify-items: center;
@@ -133,7 +133,7 @@ b{
     border-radius: 30px;
 }
 #end{
-    margin-left: 370px;
+    margin-left: 350px;
 }
 .button {
     border: none;
