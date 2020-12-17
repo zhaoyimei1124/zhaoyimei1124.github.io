@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>DSC106 - Final Project</title>
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap" rel="stylesheet" />
+ <link href="./styles/final_project.css" rel="stylesheet" />
+ <script src="./scripts/main.js"></script>
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+ <script src="https://code.highcharts.com/modules/timeline.js"></script><script src="https://code.highcharts.com/highcharts-more.js"></script>
+ <script src="https://code.highcharts.com/modules/exporting.js"></script>
+ <script src="https://code.highcharts.com/modules/export-data.js"></script>
+ <script src="'https://code.highcharts.com/css/highcharts.css'"></script>
+
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+ <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+ <script src="https://code.highcharts.com/modules/tilemap.js"></script>
+ <script src="https://code.highcharts.com/modules/exporting.js"></script>
+ <script src="https://code.highcharts.com/modules/export-data.js"></script>
+ <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+ 
+ 
+</head>
+
+<body>
+
+ <div id="main">
+  <img id="titleImage" src="/images/title.gif" height="230" width="450">
+  <h1 id="titlename">How Airbnb Shapes the World</h1>
+  <p id="authorname"> Yimei Zhao & Yufei Zhou</p >
+  <hr style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <br >
+  <br >
+  <div id="dashboard">
+   <div>
+	   <img src="/images/listings.png" height="65" width="65">
+   </div>
+   <div>
+	   <img src="/images/locations.png" height="65" width="65">
+   </div>
+   <div>
+	   <img src="/images/dollar.png" height="65" width="65">
+   </div>
+   <div>
+    <h1>7 million</h1>
+   </div>
+   <div>
+    <h1>100,000+ </h1>
+   </div>
+   <div>
+    <h1>3.5 billion</h1>
+   </div>
+   <div>
+    <p>listings worldwide</p >
+   </div>
+   <div>
+    <p>cities with active listings</p >
+   </div>
+   <div>
+    <p>company net worth</p >
+   </div>
+  </div>
+  <br >
+  <br >
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <div id="story"><script>timeline()</script></div>
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <div id="pyramid">
+    <script>pyramid()</script>
+    <p>Airbnb has listings in more than 220 countries. In this graph, we want to visualize the top 5 countries who have been economically greatly impacted
+      by Airbnb. We can tell that America is leading by a lot with 33.8 billion dollars.</p>
+  </div>
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <figure class="highcharts-figure">
+    <div id="map"><script>map()</script></div>
+    <p>The tile map shows average pricing per night in each state in Airbnb. We categorized the price range into 4 intervals, as it shows above.
+      Lighter color represents cheaper price, while darker color represents more expensive price.
+    </p >
+  </figure>
+
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <section class="chart-parent">
+	  <div id="semipie1" style="width: 50%;"><script>semi1()</script></div> 
+	  
+	  <div id="semipie2" style="width: 50%;"><script>semi2()</script></div> 
+  </section>
+  <p>These two semi-pie charts show the comparison between different room types between LA and NYC. LA has more entire apartments/homes, whereas NYC has more
+	  private rooms.
+  </p>
+  <br >
+  <br>
+  <br>
+
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <p id="cloudname">Airbnb Review Comments in LA Area</p >
+    <div id="wordcloud"><img src="/images/LA_review.png" width="500px" height="300px"></div>
+    <p id="caption1">This word cloud was generated from user comments (261696284 words) who have lived in one of LA Airbnb homes since 2010.
+     From this chart, we can understand what people care the most about during their stay at an Airbnb. <b>Location, Clealiness, Host Communication,</b>
+    and <b>Overall Value</b> are four features we are going to focus on.</p >
+  <hr  style="height:2px;border-width:0;color:rgb(252, 177, 177);background-color:rgb(248, 184, 184)">
+  <div id="line"><script>line()</script>
+	<p>The area chart above shows the percentage of gross booking value in Airbnb. The green area represents positive percentage.
+		And the red area represents negative percentage. 
+	</p >
+	<p>
+		In January and Februray, Airbnb had positve gross booking value. However, in March, when the Covid-19 started, the gross booking value reached its lowest point.
+		And it started to recover from the setback from April. We only have data untill September. And we noticed that it gradually approaches to 0%.
+	</p >
+	  
+  </div>
+  <div id="end">
+    <img id = "endimg" src="images/end.gif" height="270" width="400">
+  </div>
+  <div>
+    <button class ="button button2" onclick= "window.location= 'http://127.0.0.1:5501/index.html';"> End of the Journey</button>
+  </div>
+</div>
+
+</body>
+
+</html>
