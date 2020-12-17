@@ -19,11 +19,11 @@ h1{
 }
 #titleImage{
     border-radius: 30px;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 #titlename{
     font-family: 'Paytone One', sans-serif;
-    margin-left: 300px;
+    margin-left: 250px;
     font-size: 40px;
     color: rgb(104, 102, 102);
 }
@@ -40,7 +40,7 @@ p{
 
 }
 #authorname{
-    margin-left: 900px;
+    margin-left: 800px;
     text-shadow: 2px 2px 8px #f7917f;
     color: rgb(138, 135, 135);
 }
