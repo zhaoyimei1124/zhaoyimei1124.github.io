@@ -47,7 +47,7 @@ p{
 
 #dashboard{
     display: grid;
-    margin-left: 30px;
+    margin-left: 10px;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 80px 25px;
     justify-items: center;
