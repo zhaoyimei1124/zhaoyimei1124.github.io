@@ -254,6 +254,9 @@ function map(){
                 color: 'rgb(104, 102, 102)'
             }
         },
+        subtitle:{
+            text: "Source: https://www.alltherooms.com/analytics/average-airbnb-prices-by-city/"
+        },
         xAxis: {
             visible: false
         },
@@ -683,6 +686,9 @@ function semi1(){
             verticalAlign: 'middle',
             y: 60
         },
+        subtitle:{
+            text: "Source: http://insideairbnb.com/get-the-data.html"
+        },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
@@ -737,6 +743,9 @@ function semi2(){
             align: 'center',
             verticalAlign: 'middle',
             y: 60
+        },
+        subtitle:{
+            text: "Source: http://insideairbnb.com/get-the-data.html"
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
