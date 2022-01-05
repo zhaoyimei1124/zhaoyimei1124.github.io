@@ -3,19 +3,19 @@
 }
 body{
     background: url("/images/open.png") center no-repeat fixed;
-    width: 100%;
+    padding: 50px;
 }
 
 #main{
-    width: 80%;
-    margin: 6%;
+    width: 1150px;
+    margin: 50px;
     padding: 50px;
     border-radius: 30px;
     border: 10px solid #f8cfca;
 }
 
 #travel{
-    margin-left: 32%;
+    margin-left: 350px;
     border-radius: 30px;
 }
 
@@ -26,7 +26,7 @@ body{
     text-align: center;
     font-size: 23px;
     cursor: pointer;
-    margin-left: 32%;
+    margin-left: 350px;
     border-radius: 30px;
   }
 
